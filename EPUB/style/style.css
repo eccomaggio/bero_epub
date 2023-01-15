@@ -1,0 +1,131 @@
+
+        /* .center {text-align: center}
+        .sr-only {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+        .strong {font-weight: bold;}
+        .italic {font-style: italic;}
+        .serif {font-family: serif;}
+        .sans {font-family: sans-serif;}
+        .big {font-size: 1.5em;}
+        .small {font-size: .75em;}
+        .offset {
+            margin: 1em;
+            padding: 1.5em;
+            border: black 1px solid;
+        }
+        img {
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+            max-height: 100%;
+            column-count: 1;
+            break-inside: avoid;
+            oeb-column-number: 1;
+        }
+        p {
+            text-indent: 4em;
+        } */
+
+        /* Custom styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    margin: 0 3em;
+}
+
+section::before {
+    content: "__________________________________________________________________";
+}
+
+h1,h2,h3 {
+    font-family: 'Ultra', serif;
+    font-weight: 900;
+    font-style: italic;
+    color: deeppink;
+}
+
+p {
+    /* text-indent: 4em; */
+}
+
+dd, dt, dl {
+    display: inline;
+}
+
+table {
+    border-collapse: separate;
+    /* border-spacing: 0.5em; */
+    border-spacing: 0;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+tr {
+    padding: 5.5em;
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+th {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* tbody tr:first-child td, tfoot tr:first-child td { */
+tbody tr:first-child td {
+    border-top: 1px solid;
+    /* padding-top: 0.5em; */
+}
+
+tbody tr:last-child td {
+    border-bottom: 1px solid;
+}
+
+h4, h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h4 span, h5 span, li span {
+    font-weight: normal;
+}
+
+ul {
+    padding-left: 0;
+}
+ol {
+    padding-left: 1em;
+}
+
+figcaption {
+    color: gray;
+    font-style: italic;
+}
+
+.recipe ul {
+    color: deeppink;
+    font-weight: bold;
+    list-style: none;
+}
+
+.black {
+    color: black;
+}
